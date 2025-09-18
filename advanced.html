@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced Korean | Learn hangeul</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media-queries.css" />
+    <link rel="shortcut icon" href="images/South-Korea.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body id="main">
+    <nav class="nav-container">
+      <div class="logo-container">
+        <p class="south-korean-flag-icon">🇰🇷</p>
+        <a href="index.html" class="south-korea-text">Learn Korean</a>
+      </div>
+      <a href="#" class="burger-menu-btn" id="show-btn" onclick="show()">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="burger-menu-btn-icon"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+      </a>
+      <div class="nav-links">
+        <ul class="nav-link-container">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="beginner.html">Beginner</a></li>
+          <li><a href="advanced.html" class="active">Advanced</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="popout-menu" id="popout-menu">
+      <div class="logo-container logo-pop">
+        <p class="south-korean-flag-icon">🇰🇷</p>
+        <a href="index.html" class="south-korea-text">Learn Korean</a>
+      </div>
+      <a href="#" class="popout-menu-btn-close" onclick="closePop()">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="popout-menu-btn-close-icon"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"
+          />
+        </svg>
+      </a>
+      <ul class="popout-menu-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="beginner.html">Beginner</a></li>
+        <li><a href="advanced.html" class="active">Advanced</a></li>
+      </ul>
+    </div>
+
+    <div class="main-container">
+      <header class="header">
+        <div class="title-container">
+          <h1 id="title">Advanced Korean</h1>
+          <p class="sub-title">Take your Korean to the next level</p>
+        </div>
+      </header>
+
+<!-- Grammar Patterns Section -->
+  <section class="section-grammar">
+    <h2 class="grammar-title">Complex Grammar Patterns</h2>
+    <div class="grammar-patterns">
+      <div class="grammar-card">
+        <h3>~는 동안</h3>
+        <p>Used to express "while" doing something</p>
+        <div class="example">
+          <div class="korean-example">저는 공부하는 동안 음악을 들어요.</div>
+          <div class="romanized-example">jeoneun gongbu haneun dongan eumageul deureoyo</div>
+          <div class="english-translation">I listen to music while studying.</div>
+        </div>
+      </div>
+      <div class="grammar-card">
+        <h3>~기 때문에</h3>
+        <p>Used to express reason ("because")</p>
+        <div class="example">
+          <div class="korean-example">비가 오기 때문에 우산을 써요.</div>
+          <div class="romanized-example">biga ogi ttaemune usaneul sseoyo</div>
+          <div class="english-translation">I use an umbrella because it's raining.</div>
+        </div>
+      </div>
+      <div class="grammar-card">
+        <h3>~려고</h3>
+        <p>Used to express intention ("in order to")</p>
+        <div class="example">
+          <div class="korean-example">책을 읽으려고 도서관에 갔어요.</div>
+          <div class="romanized-example">chaegeul ilgeuryeogo doseogwane gasseoyo</div>
+          <div class="english-translation">I went to the library to read a book.</div>
+        </div>
+      </div>
+      <!-- Extra Grammar Patterns -->
+      <div class="grammar-card">
+        <h3>~(으)면서</h3>
+        <p>Used to express "while simultaneously" doing something</p>
+        <div class="example">
+          <div class="korean-example">저는 TV를 보면서 저녁을 먹어요.</div>
+          <div class="romanized-example">jeoneun tibeureul bomyeonseo jeonyeogeul meogeoyo</div>
+          <div class="english-translation">I eat dinner while watching TV.</div>
+        </div>
+      </div>
+  </section>
+
+  <!-- Sentence Structure Section -->
+  <section class="section-sentence-structure">
+    <h2 class="sentence-title">Sentence Structure</h2>
+    <p class="sentence-text">
+      Korean follows a Subject-Object-Verb (SOV) structure, which is different from English's SVO.
+    </p>
+    <div class="structure-examples">
+      <div class="structure-example">
+        <div class="korean-sentence">저는 사과를 먹어요.</div>
+        <div class="romanized-example">jeoneun sagwareul meogeoyo</div>
+        <div class="breakdown">[I] [apple] [eat]</div>
+        <div class="translation">I eat an apple.</div>
+      </div>
+      <div class="structure-example">
+        <div class="korean-sentence">우리는 영화를 봅니다.</div>
+        <div class="romanized-example">urineun yeonghwareul bomnida</div>
+        <div class="breakdown">[We] [movie] [watch]</div>
+        <div class="translation">We watch a movie.</div>
+      </div>
+      <div class="structure-example">
+        <div class="korean-sentence">학생이 도서관에 있어요.</div>
+        <div class="romanized-example">haksaengi doseogwane isseoyo</div>
+        <div class="breakdown">[Student] [library] [is/exists]</div>
+        <div class="translation">The student is in the library.</div>
+      </div>
+      <div class="structure-example">
+        <div class="korean-sentence">나는 친구에게 선물을 줬어요.</div>
+        <div class="romanized-example">naneun chinguege seonmureul jwosseoyo</div>
+        <div class="breakdown">[I] [to friend] [present] [gave]</div>
+        <div class="translation">I gave a present to my friend.</div>
+      </div>
+      <div class="structure-example">
+        <div class="korean-sentence">어머니가 저녁을 준비합니다.</div>
+        <div class="romanized-example">eomeoniga jeonyeogeul junbihamnida</div>
+        <div class="breakdown">[Mother] [dinner] [prepares]</div>
+        <div class="translation">My mother prepares dinner.</div>
+      </div>
+    </div>
+  </section>
+
+<!-- Idiomatic Expressions Section -->
+<section class="section-idioms">
+  <h2 class="idioms-title">Idiomatic Expressions</h2>
+  <div class="idiom-cards">
+    <div class="idiom-card">
+      <div class="korean-idiom">눈이 높다</div>
+      <div class="romanized-example">nun-i nopda</div>
+      <div class="literal-translation">Eyes are high</div>
+      <div class="actual-meaning">To have high standards</div>
+    </div>
+    <div class="idiom-card">
+      <div class="korean-idiom">입이 무겁다</div>
+      <div class="romanized-example">ibi mugeopda</div>
+      <div class="literal-translation">Mouth is heavy</div>
+      <div class="actual-meaning">To be discreet, able to keep secrets</div>
+    </div>
+    <div class="idiom-card">
+      <div class="korean-idiom">손이 크다</div>
+      <div class="romanized-example">son-i keuda</div>
+      <div class="literal-translation">Hands are big</div>
+      <div class="actual-meaning">To be generous/spend a lot</div>
+    </div>
+    <div class="idiom-card">
+      <div class="korean-idiom">귀가 얇다</div>
+      <div class="romanized-example">gwiga yalbda</div>
+      <div class="literal-translation">Ears are thin</div>
+      <div class="actual-meaning">To be easily influenced by others</div>
+    </div>
+    <div class="idiom-card">
+      <div class="korean-idiom">머리가 좋다</div>
+      <div class="romanized-example">meoriga jota</div>
+      <div class="literal-translation">Head is good</div>
+      <div class="actual-meaning">To be smart/clever</div>
+    </div>
+  </div>
+</section>
+
+<!-- Cultural Context Section -->
+<section class="section-culture">
+  <h2 class="culture-title">Cultural Context</h2>
+  <div class="culture-cards">
+    <div class="culture-card">
+      <h3>Honorifics</h3>
+      <p>Korean has complex honorific systems that reflect social hierarchy and relationships.</p>
+      <div class="example">
+        <div class="regular">반말 (informal): 먹어<br /><span class="romanized-example">meogeo</span><br /><span class="english-translation">Eat (informal)</span></div>
+        <div class="honorific">존댓말 (formal): 드세요<br /><span class="romanized-example">deuseyo</span><br /><span class="english-translation">Eat (formal)</span></div>
+      </div>
+    </div>
+    <div class="culture-card">
+      <h3>Age Importance</h3>
+      <p>Age influences language, relationships, and hierarchy in Korean society.</p>
+      <div class="example">
+        <div class="regular">형 (older brother for males)<br /><span class="romanized-example">hyeong</span><br /><span class="english-translation">Older brother (for males)</span></div>
+        <div class="honorific">오빠 (older brother for females)<br /><span class="romanized-example">oppa</span><br /><span class="english-translation">Older brother (for females)</span></div>
+      </div>
+    </div>
+    <div class="culture-card">
+      <h3>Bow Greetings</h3>
+      <p>Bowing is an important greeting and sign of respect in Korean culture.</p>
+      <div class="example">
+        <div class="regular">안녕하세요 (bowing slightly)<br /><span class="romanized-example">annyeonghaseyo</span><br /><span class="english-translation">Hello (formal greeting)</span></div>
+      </div>
+    </div>
+    <div class="culture-card">
+      <h3>Seollal (Korean New Year)</h3>
+      <p>Traditional holiday with rituals, special foods and family gatherings.</p>
+      <div class="example">
+        <div class="regular">새해 복 많이 받으세요<br /><span class="romanized-example">saehae bok mani badeuseyo</span><br /><span class="english-translation">Happy New Year</span></div>
+      </div>
+    </div>
+    <div class="culture-card">
+      <h3>Kimchi & Food Sharing</h3>
+      <p>Sharing food and eating together is important in Korean culture, especially with kimchi.</p>
+      <div class="example">
+        <div class="regular">김치를 나눠 먹어요<br /><span class="romanized-example">gimchireul nanwo meogeoyo</span><br /><span class="english-translation">We share kimchi when we eat.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Quiz Section -->
+<section class="section-quiz">
+  <h2 class="quiz-title">Grammar Quiz</h2>
+  <div class="quiz-container" id="quiz-container">
+    <form id="korean-quiz">
+      <div class="quiz-question" data-answer="0">
+        <p class="question-text">Which particle indicates the topic of a sentence?</p>
+        <div class="quiz-options">
+          <label><input type="radio" name="q1" value="0"> 는/은</label>
+          <label><input type="radio" name="q1" value="1"> 를/을</label>
+          <label><input type="radio" name="q1" value="2"> 에</label>
+          <label><input type="radio" name="q1" value="3"> 에서</label>
+        </div>
+        <div class="correct-answer" style="display:none;color:green;">Correct answer: 는/은</div>
+      </div>
+      <div class="quiz-question" data-answer="2">
+        <p class="question-text">What does the ending ~고 싶다 express?</p>
+        <div class="quiz-options">
+          <label><input type="radio" name="q2" value="0"> Ability</label>
+          <label><input type="radio" name="q2" value="1"> Permission</label>
+          <label><input type="radio" name="q2" value="2"> Desire/Wish</label>
+          <label><input type="radio" name="q2" value="3"> Necessity</label>
+        </div>
+        <div class="correct-answer" style="display:none;color:green;">Correct answer: Desire/Wish</div>
+      </div>
+      <div class="quiz-question" data-answer="1">
+        <p class="question-text">Choose the correct honorific verb for "to eat":</p>
+        <div class="quiz-options">
+          <label><input type="radio" name="q3" value="0"> 먹다</label>
+          <label><input type="radio" name="q3" value="1"> 드시다</label>
+          <label><input type="radio" name="q3" value="2"> 마시다</label>
+          <label><input type="radio" name="q3" value="3"> 있다</label>
+        </div>
+        <div class="correct-answer" style="display:none;color:green;">Correct answer: 드시다</div>
+      </div>
+      <div class="quiz-question" data-answer="3">
+        <p class="question-text">What does "손이 크다" mean?</p>
+        <div class="quiz-options">
+          <label><input type="radio" name="q4" value="0"> To be good with hands</label>
+          <label><input type="radio" name="q4" value="1"> To have large hands</label>
+          <label><input type="radio" name="q4" value="2"> To be clumsy</label>
+          <label><input type="radio" name="q4" value="3"> To be generous/spend a lot</label>
+        </div>
+        <div class="correct-answer" style="display:none;color:green;">Correct answer: To be generous/spend a lot</div>
+      </div>
+      <div class="quiz-question" data-answer="2">
+        <p class="question-text">What is the meaning of "비가 오기 때문에 우산을 써요"?</p>
+        <div class="quiz-options">
+          <label><input type="radio" name="q5" value="0"> I go out because I want to</label>
+          <label><input type="radio" name="q5" value="1"> I forgot my umbrella</label>
+          <label><input type="radio" name="q5" value="2"> I use an umbrella because it's raining</label>
+          <label><input type="radio" name="q5" value="3"> I like rainy days</label>
+        </div>
+        <div class="correct-answer" style="display:none;color:green;">Correct answer: I use an umbrella because it's raining</div>
+      </div>
+      <button type="button" class="quiz-submit" id="quiz-submit">Submit Answers</button>
+      <button type="button" class="quiz-reset" id="quiz-reset" style="margin-left:1rem;">Reset Quiz</button>
+    </form>
+    <div id="quiz-result" style="margin-top: 1.5rem; font-weight: bold;"></div>
+  </div>
+</section>
+      <div style="margin:2rem 0; text-align:center;">
+        <a href="index.html" style="color:#5c7cfa;font-weight:bold;text-decoration:underline;">← Back to Home</a>
+      </div>
+    </div>
+    <script>
+(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="ZDYBn1wwHmPKsCpdun1_3";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+</script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

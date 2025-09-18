@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Words Merging Game Online</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="Fruit Merge game is very easy to play game for students in this website you will paly online Fruit Merge gmae at fruitmerge.github.io ">
+    <meta name="keywords" content="fruit merge, fruit merge game, fruit merge unblocked, fruit merge game unblocked, fruit merge game online, fruit merge culinary school, fruit merge cool math games, fruit merge watermelon puzzle, fruit merge unblocked 76">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/game.css">
+    <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
+    <link rel="canonical" href="https://fruitmerge.github.io/">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/popper.min.js"></script>
+</head>
+<body>
+    <h1>Hangeul Merge Game</h1>
+    <div class="jamo-list-container">
+        <h2>Available Jamos</h2>
+        <div class="jamo-list">
+            <div class="jamo-item" style="background-color: #f3969a">ㄴ</div>
+            <div class="jamo-item" style="background-color: #ffb980">ㅏ</div>
+            <div class="jamo-item" style="background-color: #78c2ad">ㅂ</div>
+            <div class="jamo-item" style="background-color: #b492cc">ㅣ</div>
+            <div class="jamo-item" style="background-color: #8ecae6">ㅇ</div>
+            <div class="jamo-item" style="background-color: #f87171">ㅈ</div>
+            <div class="jamo-item" style="background-color: #71f8b9">ㅕ</div>
+        </div>
+    </div>
+
+    <div class="game-container">
+        <div class="instructions">
+            <h2>How to Play</h2>
+            <p>Click on the game area to drop Korean characters (jamos). When jamos touch, they merge to form syllables and words.</p>
+            <p>Complete all target words to win the game!</p>
+            <p><strong>Merge Rules:</strong></p>
+            <ul>
+                <li>ㄴ + ㅏ = 나</li>
+                <li>ㅂ + ㅏ = 바</li>
+                <li>ㅂ + ㅣ = 비</li>
+                <li>ㅇ + ㅏ = 아</li>
+                <li>아 + ㄴ = 안</li>
+                <li>ㄴ + ㅕ = 녀</li>
+                <li>녀 + ㅇ = 녕</li>
+                <li>ㅈ + ㅣ = 지</li>
+
+            </ul>
+            <p><strong>Try to make:</strong></p>
+            <ul>
+                <li>나비 (Butterfly)</li>
+                <li>바나나 (Banana)</li>
+                <li>안녕 (Hello/Goodbye)</li>
+                <li>바지 (Pants)</li>
+            </ul>
+        </div>
+        <div class="game-board">
+            <div class="game-info">
+                <div>Click to drop jamos. Merge them to form syllables and words!</div>
+            </div>
+            <canvas id="hangeul-game-canvas" width="500" height="600"></canvas>
+            <div id="hangeul-gameover-message"></div>
+        </div>
+        <div class="target-words">
+            <h2>Target Words</h2>
+            <ul class="target-list" id="hangeul-target-words-container">
+                <li>
+                    <span id="hangeul-target-word1">나비 nabi (Butterfly)</span>
+                    <span id="hangeul-status-word1" class="hangeul-target-status hangeul-not-achieved">Incomplete</span>
+                </li>
+                <li>
+                    <span id="hangeul-target-word2">바나나 banana (Banana)</span>
+                    <span id="hangeul-status-word2" class="hangeul-target-status hangeul-not-achieved">Incomplete</span>
+                </li>
+                <li>
+                    <span id="hangeul-target-word3">안녕 annyeong (Hello/Goodbye)</span>
+                    <span id="hangeul-status-word3" class="hangeul-target-status hangeul-not-achieved">Incomplete</span>
+                </li>
+                <li>
+                    <span id="hangeul-target-word4">바지 baji (Pants)</span>
+                    <span id="hangeul-status-word4" class="hangeul-target-status hangeul-not-achieved">Incomplete</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="description-container">
+        <h2 class="section-title">Game Description</h2>
+        <div class="row">
+            <div class="col">
+                <div class="game-description">
+                    <h3>About This Game</h3>
+                    <p>This educational hangeul merging game combines the addictive gameplay of Suika (Watermelon) Game with Korean language learning. Start with basic jamo characters and merge them to form syllables, then combine syllables to create complete Korean words. It's a fun and interactive way to understand how hangeul characters combine to form words!</p>
+                </div>
+            </div>
+        </div>
+        <p><a href="index.html">return to home</a></p>
+    </div>
+    <div class="row">
+        <div class="col">
+            <p class="text-center py-3 footer_black">fruitmerge.io &#169; 2025</p>
+        </div>
+    </div>
+    <script src="js/hangeul_game_easy.js"></script>
+</body>
+</html>

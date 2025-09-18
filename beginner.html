@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beginner Korean | Learn hangeul</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media-queries.css" />
+    <link rel="shortcut icon" href="images/South-Korea.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body id="main">
+    <nav class="nav-container">
+      <div class="logo-container">
+        <p class="south-korean-flag-icon">🇰🇷</p>
+        <a href="index.html" class="south-korea-text">Learn Korean</a>
+      </div>
+      <a href="#" class="burger-menu-btn" id="show-btn" onclick="show()">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="burger-menu-btn-icon"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+      </a>
+      <div class="nav-links">
+        <ul class="nav-link-container">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="beginner.html" class="active">Beginner</a></li>
+          <li><a href="advanced.html">Advanced</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="popout-menu" id="popout-menu">
+      <div class="logo-container logo-pop">
+        <p class="south-korean-flag-icon">🇰🇷</p>
+        <a href="index.html" class="south-korea-text">Learn Korean</a>
+      </div>
+      <a href="#" class="popout-menu-btn-close" onclick="closePop()">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="popout-menu-btn-close-icon"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"
+          />
+        </svg>
+      </a>
+      <ul class="popout-menu-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="beginner.html" class="active">Beginner</a></li>
+        <li><a href="advanced.html">Advanced</a></li>
+      </ul>
+    </div>
+
+    <div class="main-container">
+      <header class="header">
+        <div class="title-container">
+          <h1 id="title">Beginner Korean</h1>
+          <p class="sub-title">Master the basics of hangeul</p>
+        </div>
+      </header>
+
+      <!-- Consonants Section -->
+      <section class="section-consonants">
+        <h2 class="consonants-title">Consonants</h2>
+        <p class="consonants-text">
+          There are 14 basic consonants in hangeul. Practice pronouncing each one:
+        </p>
+        <div class="consonants-cards-container">
+          <div class="consonants-card1 card">
+            <div class="korean-character">ᄀ</div>
+            <div class="english-character">g</div>
+            <div class="pronunciation-guide">/g/ as in "go"</div>
+          </div>
+          <div class="consonants-card2 card">
+            <div class="korean-character">ᄂ</div>
+            <div class="english-character">n</div>
+            <div class="pronunciation-guide">/n/ as in "no"</div>
+          </div>
+          <div class="consonants-card3 card">
+            <div class="korean-character">ᄃ</div>
+            <div class="english-character">d</div>
+            <div class="pronunciation-guide">/d/ as in "dog"</div>
+          </div>
+          <div class="consonants-card4 card">
+            <div class="korean-character">ㄹ</div>
+            <div class="english-character">rl</div>
+            <div class="pronunciation-guide">/r/ or /l/ as in "rail"</div>
+          </div>
+          <div class="consonants-card5 card">
+            <div class="korean-character">ㅁ</div>
+            <div class="english-character">m</div>
+            <div class="pronunciation-guide">/m/ as in "mom"</div>
+          </div>
+          <div class="consonants-card6 card">
+            <div class="korean-character">ㅂ</div>
+            <div class="english-character">b</div>
+            <div class="pronunciation-guide">/b/ as in "boy"</div>
+          </div>
+          <div class="consonants-card7 card">
+            <div class="korean-character">ㅅ</div>
+            <div class="english-character">s</div>
+            <div class="pronunciation-guide">/s/ as in "sun"</div>
+          </div>
+          <div class="consonants-card8 card">
+            <div class="korean-character">ㅇ</div>
+            <div class="english-character">(silent)</div>
+            <div class="pronunciation-guide">silent or "ng" as in "song"</div>
+          </div>
+          <div class="consonants-card9 card">
+            <div class="korean-character">ㅈ</div>
+            <div class="english-character">j</div>
+            <div class="pronunciation-guide">/j/ as in "jungle"</div>
+          </div>
+          <div class="consonants-card10 card">
+            <div class="korean-character">ㅊ</div>
+            <div class="english-character">ch</div>
+            <div class="pronunciation-guide">/ch/ as in "chop"</div>
+          </div>
+          <div class="consonants-card11 card">
+            <div class="korean-character">ㅋ</div>
+            <div class="english-character">k</div>
+            <div class="pronunciation-guide">/k/ as in "kite"</div>
+          </div>
+          <div class="consonants-card12 card">
+            <div class="korean-character">ㅌ</div>
+            <div class="english-character">t</div>
+            <div class="pronunciation-guide">/t/ as in "top"</div>
+          </div>
+          <div class="consonants-card13 card">
+            <div class="korean-character">ㅍ</div>
+            <div class="english-character">p</div>
+            <div class="pronunciation-guide">/p/ as in "pen"</div>
+          </div>
+          <div class="consonants-card14 card">
+            <div class="korean-character">ㅎ</div>
+            <div class="english-character">h</div>
+            <div class="pronunciation-guide">/h/ as in "hat"</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Vowels Section -->
+      <section class="section-vowels">
+        <h2 class="vowels-title">Vowels</h2>
+        <p class="vowels-text">
+          There are 10 basic vowels in hangeul. Practice pronouncing each one:
+        </p>
+        <div class="vowels-cards-container">
+          <div class="vowels-card1 card">
+            <div class="korean-character">ㅏ</div>
+            <div class="english-character">a</div>
+            <div class="pronunciation-guide">/a/ as in "father"</div>
+          </div>
+          <div class="vowels-card1 card">
+            <div class="korean-character">ㅑ</div>
+            <div class="english-character">ya</div>
+            <div class="pronunciation-guide">/ya/ as in "yacht"</div>
+          </div>
+          <div class="vowels-card1 card">
+            <div class="korean-character">ㅓ</div>
+            <div class="english-character">eo</div>
+            <div class="pronunciation-guide">/eo/ as in "run"</div>
+          </div>
+          <div class="vowels-card1 card">
+            <div class="korean-character">ㅕ</div>
+            <div class="english-character">yeo</div>
+            <div class="pronunciation-guide">/yeo/ as in "young"</div>
+          </div>
+          <div class="vowels-card1 card">
+            <div class="korean-character">ㅗ</div>
+            <div class="english-character">o</div>
+            <div class="pronunciation-guide">/o/ as in "go"</div>
+          </div>
+          <div class="vowels-card1 card">
+            <div class="korean-character">ㅛ</div>
+            <div class="english-character">yo</div>
+            <div class="pronunciation-guide">/yo/ as in "yoga"</div>
+          </div>
+          <div class="vowels-card1 card">
+            <div class="korean-character">ㅜ</div>
+            <div class="english-character">u</div>
+            <div class="pronunciation-guide">/u/ as in "zoo"</div>
+          </div>
+          <div class="vowels-card1 card">
+            <div class="korean-character">ㅠ</div>
+            <div class="english-character">yu</div>
+            <div class="pronunciation-guide">/yu/ as in "yule"</div>
+          </div>
+          <div class="vowels-card1 card">
+            <div class="korean-character">ㅡ</div>
+            <div class="english-character">eu</div>
+            <div class="pronunciation-guide">/eu/ as in "put"</div>
+          </div>
+          <div class="vowels-card1 card">
+            <div class="korean-character">ㅣ</div>
+            <div class="english-character">ee</div>
+            <div class="pronunciation-guide">/ee/ as in "see"</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Word Formation Section (custom for Annyeonghaseyo) -->
+      <section class="section-word-formation">
+        <h2 class="words-title">Basic Word Formation: 안녕하세요 (annyeonghaseyo)</h2>
+        <p class="words-text">
+          Let's see how the greeting "안녕하세요" (annyeonghaseyo, meaning "Hello") is formed from its syllables.
+          <br>Click a box to hear the pronunciation!
+        </p>
+        <div class="formation-examples">
+          <div class="formation-example" data-audio="audio/1.m4a" tabindex="0">
+            <div class="korean-word">안</div>
+            <div class="breakdown">ㅇ + ㅏ + ㄴ</div>
+            <div class="meaning">an</div>
+          </div>
+          <div class="formation-example" data-audio="audio/2.m4a" tabindex="0">
+            <div class="korean-word">녕</div>
+            <div class="breakdown">ㄴ + ㅕ + ㅇ</div>
+            <div class="meaning">nyeong</div>
+          </div>
+          <div class="formation-example" data-audio="audio/3.m4a" tabindex="0">
+            <div class="korean-word">하</div>
+            <div class="breakdown">ㅎ + ㅏ</div>
+            <div class="meaning">ha</div>
+          </div>
+          <div class="formation-example" data-audio="audio/4.m4a" tabindex="0">
+            <div class="korean-word">세</div>
+            <div class="breakdown">ㅅ + ㅔ</div>
+            <div class="meaning">se</div>
+          </div>
+          <div class="formation-example" data-audio="audio/5.m4a" tabindex="0">
+            <div class="korean-word">요</div>
+            <div class="breakdown">ㅇ + ㅛ</div>
+            <div class="meaning">yo</div>
+          </div>
+        </div>
+        <div class="formation-examples" style="margin-top: 2rem;">
+          <div class="formation-example" style="background:#dbe4ff;" data-audio="audio/hello.m4a" tabindex="0">
+            <div class="korean-word" style="font-size:2.2em;">안녕하세요</div>
+            <div class="breakdown">안 + 녕 + 하 + 세 + 요</div>
+            <div class="meaning">annyeonghaseyo (Hello!)</div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="section-vocabulary">
+        <h2 class="vocabulary-title">Basic Vocabulary</h2>
+        <div class="vocabulary-cards">
+          <div class="vocabulary-card" data-audio="audio/apple.m4a" tabindex="0">
+            <div class="vocab-image">🍎</div>
+            <div class="vocab-korean">사과</div>
+            <div class="vocab-romanized">sagwa</div>
+            <div class="vocab-meaning">apple</div>
+          </div>
+          <div class="vocabulary-card" data-audio="audio/butterfly.m4a" tabindex="0">
+            <div class="vocab-image">🦋</div>
+            <div class="vocab-korean">나비</div>
+            <div class="vocab-romanized">nabi</div>
+            <div class="vocab-meaning">butterfly</div>
+          </div>
+          <div class="vocabulary-card" data-audio="audio/pants.m4a" tabindex="0">
+            <div class="vocab-image">👖</div>
+            <div class="vocab-korean">바지</div>
+            <div class="vocab-romanized">baji</div>
+            <div class="vocab-meaning">pants</div>
+          </div>
+          <div class="vocabulary-card" data-audio="audio/helo.m4a" tabindex="0">
+            <div class="vocab-image">👋</div>
+            <div class="vocab-korean">안녕</div>
+            <div class="vocab-romanized">annyeong</div>
+            <div class="vocab-meaning">hello</div>
+          </div>
+          <div class="vocabulary-card" data-audio="audio/soju.m4a" tabindex="0">
+            <div class="vocab-image">🍶</div>
+            <div class="vocab-korean">소주</div>
+            <div class="vocab-romanized">soju</div>
+            <div class="vocab-meaning">soju</div>
+          </div>
+          <div class="vocabulary-card" data-audio="audio/banana.m4a" tabindex="0">
+            <div class="vocab-image">🍌</div>
+            <div class="vocab-korean">바나나</div>
+            <div class="vocab-romanized">banana</div>
+            <div class="vocab-meaning">banana</div>
+          </div>
+        </div>
+      </section>
+
+
+      
+        <section class="section-words">
+        <h2 class="words-title">Try these words!</h2>
+        <p class="words-text">
+          Great job making it this far! Now that you know the Korean alphabet
+          have a go at trying to say these Korean words. Koreans read letters
+          from left to right & top down - Go ahead and impress yourself!
+        </p>
+        <div class="words-cards-container">
+          <div class="words-card words-card1">
+            <div class="icon-container">
+              <p class="emoji-icon">🚗</p>
+              <p class="emoji-text">car</p>
+            </div>
+            <div class="words-translation-container">
+              <p class="icon-korean-characters">차</p>
+              <p class="icon-english-characters">cha</p>
+            </div>
+          </div>
+          <div class="words-card words-card2">
+            <div class="icon-container">
+              <p class="emoji-icon">🦁</p>
+              <p class="emoji-text">lion</p>
+            </div>
+            <div class="words-translation-container">
+              <p class="icon-korean-characters">사자</p>
+              <p class="icon-english-characters">saja</p>
+            </div>
+          </div>
+          <div class="words-card words-card3">
+            <div class="icon-container">
+              <p class="emoji-icon">💧</p>
+              <p class="emoji-text">water</p>
+            </div>
+            <div class="words-translation-container">
+              <p class="icon-korean-characters">물</p>
+              <p class="icon-english-characters">mul</p>
+            </div>
+          </div>
+          <div class="words-card words-card4">
+            <div class="icon-container">
+              <p class="emoji-icon">🎁</p>
+              <p class="emoji-text">gift</p>
+            </div>
+            <div class="words-translation-container">
+              <p class="icon-korean-characters">선물</p>
+              <p class="icon-english-characters">sonmul</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="game-exercise-section">
+        <div class="game-container">
+          <h2 class="words-title">Hangeul Merge Game</h2>
+          <p class="words-text">
+          Test your knowledge of Korean characters by playing this fun merge game!
+          Click to drop jamos, merge them to form syllables and words!
+         </p>
+         <p class="words-text">
+         They will be a extra difficulty available at the main page gaming section.
+         </p>
+      </section>
+      <section class="game-exercise-section">
+          <button id="beginnerGameBtn" class="game-exercise-btn" type="button">
+          🎮 Try the words learned with some little game exercises ➔
+          </button>
+            <div id="beginnerDifficultyModal" class="difficulty-modal" style="display:none;">
+             <div class="difficulty-modal-content">
+                <span class="difficulty-modal-title">Select Difficulty:</span>
+                  <ul class="difficulty-list">
+                   <li><a href="miniGame1.html" class="difficulty-link">Easy</a></li>
+                   <li><a href="miniGame2.html" class="difficulty-link">Medium</a></li>
+                  </ul>
+                <button class="difficulty-modal-close" type="button">&times;</button>
+              </div>
+            </div>
+        </section>
+      <div style="margin:2rem 0; text-align:center;">
+        <a href="index.html" style="color:#5c7cfa;font-weight:bold;text-decoration:underline;">← Back to Home</a>
+      </div>
+    <script>
+(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="ZDYBn1wwHmPKsCpdun1_3";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+</script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

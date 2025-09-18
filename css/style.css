@@ -1,0 +1,1243 @@
+/* RESET STYLES */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* GENERAL STYLES */
+#main {
+  position: relative;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  color: #333333;
+  border-bottom: 8px solid #5c7cfa;
+}
+
+.main-container {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0 2rem;
+  padding-top: 60px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  color: #5c7cfa;
+}
+
+/* NAVIGATION STYLES */
+nav {
+  width: 100vw;
+  background-color: #fff;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.nav-container {
+  position: fixed;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  color: #4c4c4c;
+}
+
+.south-korean-flag-icon {
+  font-size: 24px;
+}
+
+.south-korea-text:link,
+.south-korea-text:visited {
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #666666;
+}
+
+.burger-menu-btn {
+  width: 24px;
+  height: 24px;
+  color: #191919;
+}
+
+/* NAV LINKS - IMPROVED */
+.nav-links {
+  display: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.nav-link-container {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-link-container li {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.nav-link-container a:link,
+.nav-link-container a:visited {
+  text-decoration: none;
+  color: #4c4c4c;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.nav-link-container a:hover,
+.nav-link-container a:active {
+  color: #5c7cfa;
+  background: #edf2ff;
+}
+
+.nav-link-container .active {
+  color: #5c7cfa !important;
+  font-weight: 600;
+}
+
+/* Responsive Nav Links */
+@media (max-width: 600px) {
+  .nav-link-container {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+}
+
+/* POPOUT-MENU */
+.popout-menu {
+  position: fixed;
+  right: 0;
+  background-color: #5c7cfa;
+  width: 100%;
+  height: 100vh;
+  z-index: 4;
+  visibility: hidden;
+}
+
+.popout-menu-btn-close-icon {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  color: #ffc9c9;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.popout-menu-btn-close-icon:hover,
+.popout-menu-btn-close-icon:active {
+  stroke: #e03131;
+}
+
+.popout-menu-links {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr); /* Only 3 items: Home, Beginner, Advanced */
+  gap: 48px;
+  padding: 0;
+  margin: 0;
+}
+
+.popout-menu-links li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popout-menu-links a:link,
+.popout-menu-links a:visited {
+  color: #fff;
+  text-decoration: none;
+  font-size: 32px;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+.popout-menu-links a:hover,
+.popout-menu-links a:active {
+  color: #3b5bdb;
+  background: #e9edff;
+  text-decoration: none;
+}
+
+.popout-menu-btn-close-icon {
+  cursor: pointer;
+}
+
+.logo-pop {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+.logo-pop a {
+  color: rgba(248, 249, 250, 0.8) !important;
+}
+
+/* TITLE */
+.title-container {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 48px;
+  padding-top: 48px;
+}
+
+#title {
+  font-size: 52px;
+  font-weight: 800;
+  margin-bottom: -6px;
+}
+
+.sub-title {
+  font-size: 20px;
+  color: #333333;
+  letter-spacing: 1.4px;
+}
+
+/* HEADER */
+.header {
+  margin-bottom: 80px;
+}
+
+#img-div {
+  text-align: center;
+}
+
+#image {
+  max-width: 100%;
+  border-radius: 16px;
+  margin-bottom: 8px;
+}
+
+#image-caption {
+  font-size: 14px;
+  color: #808080;
+}
+
+/* SECTION-ABOUT */
+.section-about {
+  background-color: #edf2ff;
+  padding: 32px 24px;
+  border-radius: 16px;
+  margin-bottom: 3rem;
+}
+
+.section-about-heading,
+.consonants-title,
+.vowels-title,
+.words-title,
+.congratulations-title,
+.formation-title,
+.game_title,
+.vocabulary-title {
+  margin-bottom: 16px;
+}
+
+.about-text,
+.card1-text,
+.card2-text,
+.card3-text,
+.consonants-text,
+.vowels-text,
+.words-text,
+.congratulations-text,
+.formation-text,
+.game_text,
+.vocabulary-text {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.about-text {
+  font-size: 18px;
+}
+
+/* SECTION-HOW */
+.section-how-heading {
+  margin-bottom: 64px;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 64px;
+}
+
+.card1-container,
+.card2-container,
+.card3-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.card1,
+.card2,
+.card3 {
+  background-color: #f1f3f5;
+  width: 60px;
+  height: 80px;
+  border-radius: 16px;
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.card1-heading,
+.card2-heading,
+.card3-heading {
+  font-weight: 700;
+}
+
+.card1-character {
+  position: absolute;
+  top: 40%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  font-size: 36px;
+  font-weight: 800;
+  color: #4c4c4c;
+}
+
+.circle1 {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgb(186, 200, 255, 0.4);
+  position: absolute;
+  top: 36%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card2-character {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 16px;
+  font-weight: 500;
+  color: #4c4c4c;
+}
+
+.circle2 {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: rgb(186, 200, 255, 0.4);
+  position: absolute;
+  top: 74%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card3-character1 {
+  top: 40%;
+}
+
+/* SECTION-PDF */
+.section-pdf {
+  padding: 48px 48px;
+  background-color: #5c7cfa;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.pdf-icon {
+  width: 48px;
+  stroke: #fff;
+  margin-bottom: 16px;
+}
+
+.pdf-title {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.pdf-paragraph {
+  color: rgb(237, 242, 255, 0.9);
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 32px;
+}
+
+.pdf-btn:link,
+.pdf-btn:visited {
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 16px;
+  text-decoration: none;
+  background-color: #fff;
+  padding: 16px 32px;
+  color: #5c7cfa;
+}
+
+.pdf-btn:hover,
+.pdf-btn:active {
+  background-color: #3b5bdb;
+  color: #fff;
+}
+
+/* SECTION CONSONANTS & VOWELS */
+.consonants-cards-container,
+.vowels-cards-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  text-align: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 16px;
+  border-radius: 16px;
+  height: 280px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  overflow: hidden;
+}
+
+.consonants-text,
+.vowels-text {
+  margin-bottom: 64px;
+}
+
+.korean-character {
+  font-size: 124px;
+  font-weight: 800;
+  color: #5c7cfa;
+  margin-bottom: 24px;
+}
+
+.english-character {
+  font-size: 24px;
+  font-weight: 500;
+  color: #666666;
+  color: #bac8ff;
+}
+
+/* SECTION-WORDS */
+.words-cards-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 24px;
+}
+
+.words-card {
+  border-radius: 16px;
+  display: flex;
+  padding: 24px 24px;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  justify-content: center;
+}
+
+.words-text {
+  margin-bottom: 64px;
+}
+
+.icon-container,
+.words-translation-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 40px;
+}
+
+.emoji-icon {
+  font-size: 36px;
+}
+
+.emoji-text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #808080;
+}
+
+.icon-korean-characters {
+  font-size: 36px;
+  font-weight: 500;
+  color: #5c7cfa;
+}
+
+.icon-english-characters {
+  font-size: 16px;
+  font-weight: 600;
+  color: #bac8ff;
+}
+
+/* SECTION-FOOTER */
+.section-footer {
+  border-top: 1px solid #eeeeee;
+}
+
+.section-footer p {
+  line-height: 1.6;
+}
+
+.footer-container {
+  max-width: 620px;
+  padding: 0px 20px 0px 20px;
+  margin: 120px auto 64px auto;
+}
+
+.section-footer a:link,
+.section-footer a:visited {
+  color: #333333;
+}
+
+.section-footer a:hover,
+.section-footer a:active {
+  color: #5c7cfa;
+}
+
+.signout {
+  margin-top: 64px;
+  text-align: center;
+  color: #b3b3b3;
+}
+
+.signout a:link,
+.signout a:visited {
+  color: #b3b3b3;
+  text-decoration: none;
+}
+
+.signout a:hover,
+.signout a:active {
+  color: #5c7cfa;
+}
+
+/* VIDEO */
+.video-container {
+  margin: 16px 0 32px 0;
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* ----- NEW PROFICIENCY SECTION STYLES ----- */
+.proficiency-section-new {
+  background: #fff;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  margin: 2rem auto 3.5rem auto;
+  max-width: 1200px;
+  text-align: center;
+  position: relative;
+}
+
+.proficiency-prompt {
+  font-size: 1.25rem;
+  color: #2d3748;
+  margin-bottom: 2.5rem;
+  font-weight: 600;
+}
+
+.proficiency-containers {
+  display: flex;
+  gap: 2.5rem;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.proficiency-container {
+  background: #f5f8ff;
+  flex: 1 1 350px;
+  min-width: 280px;
+  max-width: 450px;
+  padding: 2.5rem 2rem 2rem 2rem;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(92,124,250,0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  border-top: 6px solid #5c7cfa;
+  position: relative;
+  transition: box-shadow 0.2s;
+}
+
+.proficiency-container:hover {
+  box-shadow: 0 6px 24px rgba(92,124,250,0.11);
+}
+
+.beginner-container {
+  border-top-color: #4d79ff;
+}
+
+.advanced-container {
+  border-top-color: #9933ff;
+}
+
+.proficiency-container h3 {
+  margin-bottom: 0.7rem;
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: #3b5bdb;
+  letter-spacing: 0.04em;
+}
+
+.proficiency-btn {
+  padding: 1.1rem 2.2rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  margin-bottom: 1.3rem;
+  border: 2px solid transparent;
+  transition: all 0.25s;
+  margin-top: 0.5rem;
+  box-shadow: 0 2px 8px rgba(156,156,255,0.07);
+}
+
+.beginner-btn {
+  background: #4d79ff;
+  color: white;
+}
+
+.beginner-btn:hover {
+  background: #0039e6;
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 3px 12px rgba(77,121,255,0.14);
+}
+
+.advanced-btn {
+  background: #9933ff;
+  color: white;
+}
+
+.advanced-btn:hover {
+  background: #7300e6;
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 3px 12px rgba(153,51,255,0.14);
+}
+
+.proficiency-features {
+  list-style: disc inside;
+  text-align: left;
+  color: #444b66;
+  font-size: 1.04rem;
+  padding-left: 0;
+  margin: 0;
+}
+
+.proficiency-features li {
+  margin-bottom: 0.7rem;
+  padding-left: 0.3rem;
+  line-height: 1.5;
+  font-size: 1.02rem;
+  letter-spacing: 0.01em;
+}
+
+/* Responsive for proficiency section */
+@media (max-width: 980px) {
+  .proficiency-containers {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+  .proficiency-container {
+    min-width: 0;
+    width: 100%;
+    max-width: 600px;
+  }
+}
+
+/* END NEW PROFICIENCY SECTION STYLES */
+
+/* Game Exercise Button Styling */
+.game-exercise-section {
+  margin: 4rem 0;
+  text-align: center;
+}
+
+.game-exercise-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 3rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: white;
+  background: #6c5ce7;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(108,92,231,0.3);
+}
+
+.game-exercise-btn:hover {
+  background: #5b4bc4;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(108,92,231,0.4);
+}
+
+/* Chat Container Styles */
+.chat-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.chat-icon {
+  background: #5c7cfa;
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+.chat-icon:hover {
+  transform: scale(1.1);
+}
+
+.chat-window {
+  display: none;
+  width: 300px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  overflow: hidden;
+}
+
+.chat-header {
+  background: #5c7cfa;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chat-close {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0 5px;
+}
+
+.chat-messages {
+  height: 300px;
+  padding: 15px;
+  overflow-y: auto;
+  background: #f8f9fa;
+}
+
+.chat-input {
+  display: flex;
+  padding: 15px;
+  background: white;
+  border-top: 1px solid #eee;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-right: 10px;
+}
+
+.chat-send {
+  background: #5c7cfa;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.chat-send:hover {
+  background: #4a6cfa;
+}
+
+.bot-message {
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .game-exercise-btn {
+    padding: 1.5rem 2rem;
+    font-size: 1.2rem;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Beginner Page Styles */
+.pronunciation-guide {
+  font-size: 14px;
+  color: #888;
+  margin-top: 10px;
+}
+
+.section-about,
+.section-how,
+.section-consonants,
+.section-vowels,
+.section-pdf,
+.section-words,
+.section-vocabulary,
+.section-word-formation,
+.section-game {
+  margin-bottom: 128px;
+}
+
+.formation-examples {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.formation-example {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+}
+
+.korean-word {
+  font-size: 36px;
+  font-weight: 700;
+  color: #5c7cfa;
+  margin-bottom: 10px;
+}
+
+.breakdown {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.meaning {
+  font-style: italic;
+  color: #888;
+}
+
+.vocabulary-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.vocabulary-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+}
+
+.vocab-image {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.vocab-korean {
+  font-size: 24px;
+  font-weight: 700;
+  color: #5c7cfa;
+  margin-bottom: 5px;
+}
+
+.vocab-romanized {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.vocab-meaning {
+  font-weight: 500;
+}
+
+.writing-practice {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.tracing-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.character-guide {
+  font-size: 60px;
+  margin-bottom: 15px;
+  color: #5c7cfa;
+}
+
+.tracing-area {
+  height: 120px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 2px dashed #ccc;
+}
+
+/* Advanced Page Styles */
+.section-grammar,
+.section-sentence-structure,
+.section-idioms,
+.section-conversation,
+.section-culture,
+.section-quiz {
+  margin-bottom: 80px;
+}
+
+.grammar-patterns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.grammar-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.grammar-card h3 {
+  color: #5c7cfa;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.example {
+  margin-top: 15px;
+  padding: 15px;
+  background: #edf2ff;
+  border-radius: 8px;
+}
+
+.korean-example {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.english-translation {
+  font-style: italic;
+  color: #666;
+}
+
+.structure-examples {
+  margin-top: 30px;
+}
+
+.structure-example {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+}
+
+.korean-sentence {
+  font-size: 20px;
+  color: #5c7cfa;
+  margin-bottom: 10px;
+}
+
+.idiom-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.idiom-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.korean-idiom {
+  font-size: 24px;
+  font-weight: 700;
+  color: #5c7cfa;
+  margin-bottom: 10px;
+}
+
+.literal-translation {
+  font-style: italic;
+  color: #888;
+  margin-bottom: 5px;
+}
+
+.actual-meaning {
+  font-weight: 500;
+}
+
+.conversation-examples {
+  margin-top: 30px;
+}
+
+.conversation-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.situation {
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #5c7cfa;
+}
+
+.line {
+  margin-bottom: 10px;
+}
+
+.speaker {
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+.culture-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.culture-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.culture-card h3 {
+  color: #5c7cfa;
+  margin-bottom: 10px;
+}
+
+.quiz-container {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin-top: 30px;
+}
+
+.quiz-question {
+  margin-bottom: 25px;
+}
+
+.question-text {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.quiz-options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.quiz-option {
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.quiz-option:hover {
+  background: #edf2ff;
+}
+
+.quiz-submit {
+  background: #5c7cfa;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.quiz-submit:hover {
+  background: #4a6cfa;
+}
+
+/* Active state for navigation */
+.active {
+  color: #5c7cfa !important;
+  font-weight: 600;
+}
+
+.vocabulary-card:active, .vocabulary-card:focus {
+  box-shadow: 0 0 0 3px #5c7cfa33;
+}
+.formation-example:active, .formation-example:focus {
+  box-shadow: 0 0 0 3px #5c7cfa33;
+}
+
+.difficulty-modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(92,124,250,0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+.difficulty-modal-content {
+  background: #fff;
+  border-radius: 10px;
+  padding: 2rem 2.5rem 1.5rem 2.5rem;
+  box-shadow: 0 6px 30px rgba(92,124,250,0.15);
+  text-align: center;
+  min-width: 240px;
+  position: relative;
+}
+.difficulty-modal-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #3b5bdb;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+.difficulty-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+}
+.difficulty-list li {
+  margin-bottom: 1.1rem;
+}
+.difficulty-link {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #5c7cfa;
+  text-decoration: none;
+  background: #edf2ff;
+  border-radius: 6px;
+  padding: 0.8rem 2.2rem;
+  display: inline-block;
+  transition: background .2s, color .2s;
+}
+.difficulty-link:hover, .difficulty-link:focus {
+  background: #dbe4ff;
+  color: #0039e6;
+}
+.difficulty-modal-close {
+  position: absolute;
+  top: 0.7rem;
+  right: 1.2rem;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #5c7cfa;
+  cursor: pointer;
+  line-height: 1;
+}
